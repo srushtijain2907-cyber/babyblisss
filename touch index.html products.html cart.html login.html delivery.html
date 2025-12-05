@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyBliss - Baby Store</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">BabyBliss</h2>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <div id="user-display"></div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <h1>Welcome to BabyBliss</h1>
+        <p>Your trusted store for baby essentials</p>
+        <a href="products.html" class="cta-btn">Shop Now</a>
+    </header>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="images/cat_skincare.png">
+                <p>Baby Skin Care</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/cat_bath.png">
+                <p>Bath Essentials</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/cat_diaper.png">
+                <p>Diapers</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/cat_feeding.png">
+                <p>Feeding</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DELIVERY OPTIONS -->
+    <section class="delivery-section">
+        <h2>Delivery Options</h2>
+
+        <div class="delivery-grid">
+
+            <div class="delivery-card">
+                <img src="images/fast_delivery.png">
+                <h3>Fast Delivery</h3>
+                <p>Get baby products delivered in 24 hours.</p>
+            </div>
+
+            <div class="delivery-card">
+                <img src="images/cod.png">
+                <h3>Cash On Delivery</h3>
+                <p>Pay when your order arrives.</p>
+            </div>
+
+            <div class="delivery-card">
+                <img src="images/location.png">
+                <h3>Live Order Tracking</h3>
+                <p>Track your order anytime.</p>
+            </div>
+
+            <div class="delivery-card">
+                <img src="images/return.png">
+                <h3>Easy Returns</h3>
+                <p>7-day easy return policy.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOTIFICATION BUTTON -->
+    <button class="notify-btn" onclick="sendDemoNotification()">Send Demo Notification</button>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyBliss - Products</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">BabyBliss</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-section">
+        <h1>🍼 Baby Products</h1>
+        <p>Choose from our specially curated baby essentials</p>
+    </header>
+
+    <section id="product-list" class="product-list"></section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyBliss - Cart</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">BabyBliss</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a class="active" href="cart.html">Cart <span id="cart-count">0</span></a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-section">
+        <h1>Your Cart</h1>
+    </header>
+
+    <section id="cart-items" class="cart-list"></section>
+
+    <div class="cart-total-box">
+        <h3 id="cart-total">Total: ₹0</h3>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyBliss - Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">BabyBliss</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a class="active" href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="login-section">
+        <h2>Login to BabyBliss</h2>
+
+        <form class="login-form" onsubmit="login(event)">
+            <input type="email" id="login-email" placeholder="Enter Email">
+            <input type="password" id="login-password" placeholder="Enter Password">
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
